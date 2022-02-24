@@ -14,10 +14,12 @@ function validateForm(){
         nameInput.classList.add("error-border");
     }
 
-    if(!IDIsValid(employeeId.value)){
-        errorNodes[1].innerText = "Employee ID is invalid";
+    if(employeeId.value.length < 1){
+        errorNodes[1].innerText = "Name cannot be blank";
         employeeId.classList.add("error-border");
     }
+
+    
 
     if(reasons.value.length < 1){
         errorNodes[3].innerText = "Required to fill out";
@@ -38,7 +40,3 @@ function clearMessages(){
 
 }
 
-function IDIsValid(employeeId){
-    let pattern = /\S+@\S+\.\S+/;
-    return pattern.test(employeeId);
-}
