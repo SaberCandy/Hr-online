@@ -1,0 +1,60 @@
+* {
+    font-family: Arial;
+}
+#overlay{
+    width: 100%;
+    height: 80%;
+    position: relative;
+}
+
+form{
+    max-width: 550px;
+    width: 90%;
+    border: 1px solid black;
+    border-radius: 4px;
+    margin: 17vh auto 0 auto;
+    padding: 40px;
+    border-radius: 3px;
+    box-sizing: border-box;
+
+}
+h3{
+    margin: 0;
+    text-align: center;
+}
+
+label{
+    display: block;
+    margin: 20px 0;
+
+}
+input,textarea{
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    outline: none;
+    resize: none;
+    border: none;
+    border-bottom: 1px solid #d3d3d3
+}
+
+.error{
+    color: red;
+
+}
+
+.error-border{
+    border-bottom: 1px solid red;
+
+}
+
+#success{
+    color: green;
+
+}
+.navbar{
+    position: sticky;
+    top:0;
+    z-index: 100;
+    
+}
